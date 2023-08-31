@@ -58,9 +58,7 @@ RelaxedJson::decode($json, true);
 
 ## credits
 
-This library is are repack with improvements of the original work from
-
-    [https://github.com/etconsilium/php-json-fix](https://github.com/etconsilium/php-json-fix)
+This library is are repack with improvements of the original work from [https://github.com/etconsilium/php-json-fix](https://github.com/etconsilium/php-json-fix)
 
 ## tests
 
