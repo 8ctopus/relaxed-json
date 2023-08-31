@@ -53,6 +53,7 @@ $text = <<<JSON
 JSON;
 
 var_dump(RelaxedJson::decode($text, true));
+```
 
 ## credits
 
