@@ -8,7 +8,7 @@
 ![code coverage badge](https://raw.githubusercontent.com/8ctopus/relaxed-json/image-data/coverage.svg)
 ![lines of code](https://raw.githubusercontent.com/8ctopus/relaxed-json/image-data/lines.svg)
 
-Tired of json's strict syntax? Then relaxed json if for you.
+Tired of JSON's super strict syntax? Then relaxed JSON if for you.
 
 ## features
 
@@ -24,7 +24,7 @@ Tired of json's strict syntax? Then relaxed json if for you.
 ## usage
 
 ```php
-$text = <<<JSON
+$json = <<<JSON
 {
     // maximum requests per hour
     "throttleThreshold": 300,
@@ -32,7 +32,7 @@ $text = <<<JSON
 
 JSON;
 
-var_dump(RelaxedJson::decode($text, true));
+var_dump(RelaxedJson::decode($json, true));
 ```
 
 ```txt
@@ -45,14 +45,15 @@ array(1) {
 ### exceptions
 
 ```php
-$text = <<<JSON
+$json = <<<JSON
 {
     "throttleThreshold" => 300,
 }
 
 JSON;
 
-var_dump(RelaxedJson::decode($text, true));
+// throws RelaxedJsonException Syntax error
+RelaxedJson::decode($json, true);
 ```
 
 ## credits
