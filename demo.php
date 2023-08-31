@@ -10,7 +10,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 // command line error handler
 (new ExceptionHandler())->register();
 
-$text = <<<JSON
+$text = <<<'JSON'
 {
     // library name
     "name": "8ctopus/relaxed-json",
@@ -20,7 +20,7 @@ JSON;
 
 var_dump(RelaxedJson::decode($text, true));
 
-$text = <<<JSON
+$text = <<<'JSON'
 {
     "throttleThreshold" => 300,
 }

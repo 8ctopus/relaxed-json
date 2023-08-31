@@ -4,9 +4,6 @@ declare(strict_types=1);
 
 namespace Oct8pus;
 
-use Oct8pus\RelaxedJsonException;
-use stdClass;
-
 class RelaxedJson
 {
     /**
@@ -41,7 +38,7 @@ class RelaxedJson
 
         $error = json_last_error();
 
-        if ($error === \JSON_ERROR_NONE) {
+        if ($error === JSON_ERROR_NONE) {
             return $decode;
         }
 

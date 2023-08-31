@@ -14,23 +14,23 @@ use PHPUnit\Framework\TestCase;
 final class RelaxedJsonTest extends TestCase
 {
     /**
-     * @dataProvider getCases
+     * @dataProvider provideCases
      *
      * @param string $input
-     * @param array $expected
+     * @param array  $expected
      *
      * @return void
      */
-    public function testAutoDetect(string $input, array $expected) : void
+    public function test(string $input, array $expected) : void
     {
-        static::assertEquals($expected, RelaxedJson::decode($input, true));
+        self::assertSame($expected, RelaxedJson::decode($input, true));
     }
 
-    public static function getCases() : array
+    public static function provideCases() : iterable
     {
         return [
             [
-                'input' => <<<JSON
+                'input' => <<<'JSON'
                 {
                     // library name
                     "name": "8ctopus/relaxed-json",
@@ -38,11 +38,11 @@ final class RelaxedJsonTest extends TestCase
 
                 JSON,
                 'expected' => [
-                    "name" => "8ctopus/relaxed-json",
+                    'name' => '8ctopus/relaxed-json',
                 ],
             ],
             [
-                'input' => <<<JSON
+                'input' => <<<'JSON'
                 {
                     /*
                     library name
@@ -52,7 +52,7 @@ final class RelaxedJsonTest extends TestCase
 
                 JSON,
                 'expected' => [
-                    "name" => "8ctopus/relaxed-json",
+                    'name' => '8ctopus/relaxed-json',
                 ],
             ],
         ];
@@ -60,10 +60,10 @@ final class RelaxedJsonTest extends TestCase
 
     public function testException() : void
     {
-        static::expectException(RelaxedJsonException::class);
-        static::expectExceptionMessage('Syntax error');
+        self::expectException(RelaxedJsonException::class);
+        self::expectExceptionMessage('Syntax error');
 
-        $text = <<<JSON
+        $text = <<<'JSON'
         {
             "throttleThreshold" => 300,
         }
