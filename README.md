@@ -24,6 +24,8 @@ Tired of JSON's super strict syntax? Then relaxed JSON if for you.
 ## usage
 
 ```php
+use Oct8pus\RelaxedJson;
+
 $json = <<<JSON
 {
     // maximum requests per hour
