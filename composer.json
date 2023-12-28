@@ -25,7 +25,12 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Oct8pus\\": "src/"
+            "Oct8pus\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
         }
     },
     "scripts": {
