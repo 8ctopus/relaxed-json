@@ -1,9 +1,9 @@
 # relaxed json
 
-[![packagist](http://poser.pugx.org/8ctopus/relaxed-json/v)](https://packagist.org/packages/8ctopus/relaxed-json)
-[![downloads](http://poser.pugx.org/8ctopus/relaxed-json/downloads)](https://packagist.org/packages/8ctopus/relaxed-json)
-[![min php version](http://poser.pugx.org/8ctopus/relaxed-json/require/php)](https://packagist.org/packages/8ctopus/relaxed-json)
-[![license](http://poser.pugx.org/8ctopus/relaxed-json/license)](https://packagist.org/packages/8ctopus/relaxed-json)
+[![packagist](https://poser.pugx.org/8ctopus/relaxed-json/v)](https://packagist.org/packages/8ctopus/relaxed-json)
+[![downloads](https://poser.pugx.org/8ctopus/relaxed-json/downloads)](https://packagist.org/packages/8ctopus/relaxed-json)
+[![min php version](https://poser.pugx.org/8ctopus/relaxed-json/require/php)](https://packagist.org/packages/8ctopus/relaxed-json)
+[![license](https://poser.pugx.org/8ctopus/relaxed-json/license)](https://packagist.org/packages/8ctopus/relaxed-json)
 [![tests](https://github.com/8ctopus/relaxed-json/actions/workflows/tests.yml/badge.svg)](https://github.com/8ctopus/relaxed-json/actions/workflows/tests.yml)
 ![code coverage badge](https://raw.githubusercontent.com/8ctopus/relaxed-json/image-data/coverage.svg)
 ![lines of code](https://raw.githubusercontent.com/8ctopus/relaxed-json/image-data/lines.svg)
