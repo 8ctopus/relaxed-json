@@ -20,7 +20,7 @@ class RelaxedJson
      *
      * @see https://www.php.net/manual/en/function.json-decode.php
      */
-    public static function decode(string $json, bool $associative = null, int $depth = 512, int $flags = 0)
+    public static function decode(string $json, ?bool $associative = null, int $depth = 512, int $flags = 0)
     {
         // strip comments
         $json = preg_replace('~(/\*([^*]|[\r\n]|(\*+([^*/]|[\r\n])))*\*+/)|([\s\t]//.*)|(^//.*)~', '', $json);
