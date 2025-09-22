@@ -6,6 +6,4 @@ namespace Oct8pus;
 
 use Exception;
 
-class RelaxedJsonException extends Exception
-{
-}
+class RelaxedJsonException extends Exception {}

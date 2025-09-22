@@ -4,23 +4,20 @@ declare(strict_types=1);
 
 namespace Oct8pus;
 
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 
-/**
- * @internal
- *
- * @covers \Oct8pus\RelaxedJson
- */
+#[CoversClass(RelaxedJson::class)]
 final class RelaxedJsonTest extends TestCase
 {
     /**
-     * @dataProvider provideCases
-     *
      * @param string $input
      * @param array  $expected
      *
      * @return void
      */
+    #[DataProvider('provideCases')]
     public function test(string $input, array $expected) : void
     {
         self::assertSame($expected, RelaxedJson::decode($input, true));
