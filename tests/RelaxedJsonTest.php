@@ -16,6 +16,8 @@ final class RelaxedJsonTest extends TestCase
      * @param array  $expected
      *
      * @return void
+     *
+     * @dataProvider provideCases
      */
     #[DataProvider('provideCases')]
     public function test(string $input, array $expected) : void
