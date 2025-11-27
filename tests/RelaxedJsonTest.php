@@ -72,3 +72,4 @@ final class RelaxedJsonTest extends TestCase
         RelaxedJson::decode($text, true);
     }
 }
+
